@@ -1,0 +1,8 @@
+Installation of angular 
+First install latest version of node js
+can be done by searching node js download in google, install the latest version of node js by clicking on the "Current" tab
+after installing, open cmd and enter "npm --version" - for node js version
+later, enter npm install -g @angular/cli - to install angular
+after installing angular, to get the version of angular enter ng -v
+Create a folder specially for angular, copy the folder path and paste it in cmd by adding Cd as prefix - cd C:\Users\a850340\Desktop\Angular and click enter
+create first project by typing : ng new my-first-app -no-strict (don't create project in strict mode)
