@@ -1,0 +1,52 @@
+Component - a component is a key component of anugular
+a component in angular may contain its own html template, css file, typescript class and its own business logic
+components are reusable, which can be any of the html file 
+a webpage may have a multiple components
+two ways to create a component one methods by creating it manually and other way is to create it automatically by typing the following command
+Command to automatically creation of component - ng g c Component_name
+g - generate, c - component
+by the typing the above command a new folder with component_name will be created with the following files component_name.component.html, component_name.component.css
+component_name.component.ts
+
+while creating a component manually we need to follow few steps 
+1.create a folder, name it as same as component_name
+2.create the following files as componet_name.component.html, component_name.component.css, component_name.component.ts
+in the file  component_name.component.ts, write the following code
+export class ServerComponet{  //typescript class this class is used to interact/to make changes in html template
+//body 
+}
+
+to make the above typescript a component use decorator @Component, as typescripts needs to know where does the @Component come from, for that purpose we need
+import the module from "import { Component } from 'angular/core'"
+
+import { Component } from 'angular/core';
+
+@Component()
+export class ServerComponet{ 
+//body
+}
+
+as discussed before the componet contains a selector, html template and css files and ts class(the ServerComponet is ts class, now the class is a component)
+we need to pass selector, html files and css files
+
+//now its a complete component, but how does angular know this is a component
+import { Component } from 'angular/core';
+
+@Component({
+ Selector: 'app-server',
+ templateurl: './componet_name.component.html', (html file path)
+  styleUrls: ['./second.component.css']
+})
+export class ServerComponet{ 
+//body
+}
+
+to make angular know ServerComponent class is a component we need to register the component in the appmodule.ts, that's how it gets to know by just importing
+the class appmodule.ts
+
+
+
+
+
+
+
