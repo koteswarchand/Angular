@@ -6,3 +6,9 @@ later, enter npm install -g @angular/cli - to install angular
 after installing angular, to get the version of angular enter ng -v
 Create a folder specially for angular, copy the folder path and paste it in cmd by adding Cd as prefix - cd C:\Users\a850340\Desktop\Angular and click enter
 create first project by typing : ng new my-first-app -no-strict (don't create project in strict mode)
+To launch the app in the browser type the coomad : ng serve (this will launch the browser in the localhost:4200, 4200 is the default local host for angualr)
+to add stylings to our html pages or use bootstrap to style our pages instead of manulally writing css code to install bootstrap in angular we need to type
+following command : ng install -save bootstrap@3 (installing bootstrap version 3)
+in the "angular.json" file update about bootstrap styling instead of css add the bootstrap.mim.css file in angualr.json along with file path
+ "node_modules/bootstrap/dist/css/bootstrap.min.css" - file path
+ 
