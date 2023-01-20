@@ -1,0 +1,13 @@
+------------------------------------------ DATA BINDING-------------------------------------------------
+Data binding - communication between a typescript file and a html template
+generally without data binding html template is static, with data binding we can add some dynamic features to out html template
+Two types of data binding 1.One way binding 2.Two way binding
+-----One Waybinding------
+in one way binding the communicaton is uni directional at a time
+for example, the ts file will communicate with html template  but html does not communicate with ts during this commincation due uni directionalat a time  or 
+html file will commincate with ts file, but not ts does not communicate with html file  during this communication.
+-----Two wat binding------
+the communication is multidirectional
+the ts file can bind data to html file and in return ts receives a response from html file 
+Types in One way binding
+1.String interpolation, 2.propery binding
