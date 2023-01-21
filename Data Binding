@@ -11,3 +11,17 @@ the communication is multidirectional
 the ts file can bind data to html file and in return ts receives a response from html file 
 Types in One way binding
 1.String interpolation, 2.propery binding
+-------String interpolation-------
+String interpolation is used to replace a string/ print out a string/ output a string
+String interpolation can be impleted with double curly braces - {{ string_word }}
+example - in appmodules.ts a string varibale name has a value of john, this name should be printed in the html page without hard coding
+
+In appmodule.ts 
+//declare a string variable
+name = "John";
+In app.component.html
+//string interpolation
+<h2>Name : {{ name }} </h2>
+ 
+ this is how string interpolation is implemented in angular
+  {{ name }} - inside the curly braces we should pass a string or a data type that is convertable to string or a method that returns string
